@@ -6,17 +6,40 @@
     <title>Game Title 1 - Detailed Review</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Matemasie&family=Shadows+Into+Light&display=swap');
-        .detailed-review img{
-            width:100%;
-            align-items: center;
-        }
-        .detailed-review{
-            color:white;
-            text-align: center;
-            background-color:rgb(235, 84, 58);
-        }
-        </style>
+       @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Matemasie&family=Shadows+Into+Light&display=swap');
+
+.detailed-review {
+    color: white;
+    text-align: center;
+    background-color: rgb(235, 84, 58);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    max-width: 800px; /* Set a maximum width for the review box */
+    margin-left: auto; /* Center the box horizontally */
+    margin-right: auto; /* Center the box horizontally */
+}
+
+.detailed-review img {
+    width: 80%; /* Scale down the image */
+    max-width: 600px; /* Maximum width for large images */
+    height: auto;
+    margin-bottom: 20px; /* Space between image and text */
+    border-radius: 5px; /* Add rounded corners to the image */
+}
+
+.detailed-review h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.detailed-review p {
+    font-size: 18px;
+    line-height: 1.6; /* Improve readability */
+}
+
+    </style>
 </head>
 <body>
     <header class="site-header">
@@ -26,20 +49,20 @@
         <nav class="navbar">
             <ul>
                 <li><a href="blog.html"><span>H</span>ome</a></li>
-                <li><a href="index.html#reviews"><span>R</span>eviews</a></li>
+                <li><a href="blog.html#reviews"><span>R</span>eviews</a></li>
                 <li><a href="index.html#news"><span>N</span>ews</a></li>
-                <li><a href="index.html#about"><span>A</span>bout</a></li>
-                <li><a href="index.html#contact"><span>C</span>ontact</a></li>
+               
             </ul>
         </nav>
     </header>
 
     <section class="detailed-review">
-        <img src="ff.jpg" alt="">
-        <h2>Free fire likely to launch free fire india</h2>
+        <img src="ff.jpg" alt="Free Fire">
+        <h2>Free Fire Likely to Launch Free Fire India</h2>
         <p>Garena Free Fire India launch was first teased in September 2023, which was later delayed to refine the gameplay and fully comply with the localisation policies in the country. We’re now into April 2024 and still no sign of the popular battle royale game launching in the market.
-
-            But things could finally get a move on, as latest reports suggest Garena Free Fire India edition is close to completing its localisation procss, which means the official launch might not be too far away now. The report by ET quoting sources claims Garena has been busy setting up its game server in the country with the help of Yotta Data Services in the Navi Mumbai region..</p>
+            <br><br>
+            But things could finally get a move on, as latest reports suggest Garena Free Fire India edition is close to completing its localisation process, which means the official launch might not be too far away now. The report by ET quoting sources claims Garena has been busy setting up its game server in the country with the help of Yotta Data Services in the Navi Mumbai region.
+        </p>
     </section>
 
     <footer class="site-footer">
