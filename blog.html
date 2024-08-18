@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Gaming Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Matemasie&family=Shadows+Into+Light&display=swap');
+        </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            Gamer <span style="color: red;">Z</span>Blog
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home"><span>H</span>ome</a></li>
+                <li><a href="#reviews"><span>R</span>eviews</a></li>
+                <li><a href="#news"><span>N</span>ews</a></li>
+                <li><a href="#about"><span>A</span>bout</a></li>
+                <li><a href="#contact"><span>C</span>ontact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    
+
+    <section class="hero-section" id="home">
+        <div class="hero-text">
+            
+        </div>
+    </section>
+
+    <section class="reviews-section" id="reviews">
+        <h2><span>L</span>atest Reviews</h2>
+        <div class="review-cards">
+            <div class="card">
+                <img src="ff.jpg" alt="Free Fire">
+                <h3>Free Fire</h3>
+                <p>Free fire is likely to be launch<br>Free Fire India</p>
+                <a href="game1-details.html" target="_blank" class="read-more">Read More</a>
+            </div>
+            <div class="card">
+                <img src="pubg-battlegrounds.avif" alt="PUBG Battlegrounds">
+                <h3>PUBG Battlegrounds</h3>
+                <p>PUBG changes its name to BGMI enter indian gaming market</p>
+                <a href="game2-details.html" target="_blank" class="read-more">Read More</a>
+            </div>
+            <div class="card">
+                <img src="val.jpg" alt="Game 3">
+                <h3>Valorant</h3>
+                <p>Short review of the game. This is where the text description goes.</p>
+                <a href="game3-details.html" target="_blank" class="read-more">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="news-section" id="news">
+        <h2><span>L</span>atest News</h2>
+        <article class="news-article">
+            <img src="for.jpg" alt="News 1">
+            <div class="news-text">
+                <h3>Fortnite server status update as new season awaits for players</h3>
+                <p>After a four-year absence, Fortnite is making its return to iOS devices in the European Union (EU).
+                    The popular game will be available through a new iPhone version of the Epic Games Store and AltStore PAL, an independent app store.
+                    This development comes after years of legal battles between Apple and Epic, as well as changes prompted by the EU's Digital Markets Act.</p>
+            </div>
+        </article>
+        <article class="news-article">
+            <img src="ps.png" alt="News 2">
+            <div class="news-text">
+                <h3>PS5 new updates</h3>
+                <p>PS5 new features and new uptes to launch soon.</p>
+            </div>
+        </article>
+        <article class="news-article">
+            <img src="Indian-esports.png" alt="News 3">
+            <div class="news-text">
+                <h3>Future of indian esports</h3>
+                <p>India's esports industry is expected to grow rapidly in the next five years, with some predicting a market value of $151 million by 2025. The industry's growth is driven by a number of factors</p>
+            </div>
+        </article>
+    </section>
+
+    <footer class="site-footer">
+        <p>&copy; Gamerz blog All rights reserved.</p>
+        <p>Mail to: 221fa04247@gmail.com</p>
+    </footer>
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function () {
+    document.querySelector('.navbar ul').classList.toggle('active');
+});
+
+    </script>
+</body>
+</html>
