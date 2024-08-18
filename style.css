@@ -40,6 +40,7 @@ body {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
+    font-size:20px;
 }
 
 .navbar a:hover {
@@ -61,7 +62,7 @@ body {
 }
 
 .reviews-section h2, .news-section h2 {
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     font-size: 50px;
 }
