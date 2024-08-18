@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Gaming Blog</title>
+    <title>Gaming Blog</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Matemasie&family=Shadows+Into+Light&display=swap');
-        </style>
 </head>
 <body>
     <header class="site-header">
         <div class="logo">
-            Gamer<span style="color: red;">Z</span>Blog
+            Gamer<span>Z</span>Blog
         </div>
         <nav class="navbar">
             <ul>
@@ -27,11 +24,10 @@
             </div>
         </nav>
     </header>
-    
 
     <section class="hero-section" id="home">
         <div class="hero-text">
-            
+            <img src="" alt="">
         </div>
     </section>
 
@@ -51,7 +47,7 @@
                 <a href="game2-details.html" target="_blank" class="read-more">Read More</a>
             </div>
             <div class="card">
-                <img src="val.jpg" alt="Game 3">
+                <img src="val.jpg" alt="Valorant">
                 <h3>Valorant</h3>
                 <p>Short review of the game. This is where the text description goes.</p>
                 <a href="game3-details.html" target="_blank" class="read-more">Read More</a>
@@ -61,40 +57,40 @@
 
     <section class="news-section" id="news">
         <h2><span>L</span>atest News</h2>
-        <article class="news-article">
-            <img src="for.jpg" alt="News 1">
-            <div class="news-text">
-                <h3>Fortnite server status update as new season awaits for players</h3>
-                <p>After a four-year absence, Fortnite is making its return to iOS devices in the European Union (EU).
-                    The popular game will be available through a new iPhone version of the Epic Games Store and AltStore PAL, an independent app store.
-                    This development comes after years of legal battles between Apple and Epic, as well as changes prompted by the EU's Digital Markets Act.</p>
-            </div>
-        </article>
-        <article class="news-article">
-            <img src="ps.png" alt="News 2">
-            <div class="news-text">
-                <h3>PS5 new updates</h3>
-                <p>PS5 new features and new uptes to launch soon.</p>
-            </div>
-        </article>
-        <article class="news-article">
-            <img src="Indian-esports.png" alt="News 3">
-            <div class="news-text">
-                <h3>Future of indian esports</h3>
-                <p>India's esports industry is expected to grow rapidly in the next five years, with some predicting a market value of $151 million by 2025. The industry's growth is driven by a number of factors</p>
-            </div>
-        </article>
+        <div class="news-container">
+            <article class="news-article">
+                <img src="for.jpg" alt="News 1">
+                <div class="news-text">
+                    <h3>Fortnite server status update as new season awaits for players</h3>
+                    <p>After a four-year absence, Fortnite is making its return to iOS devices in the European Union (EU). </p>
+                </div>
+            </article>
+            <article class="news-article">
+                <img src="ps.png" alt="News 2">
+                <div class="news-text">
+                    <h3>PS5 new updates</h3>
+                    <p>PS5 new features and new updates to launch soon.</p>
+                </div>
+            </article>
+            <article class="news-article">
+                <img src="Indian-esports.png" alt="News 3">
+                <div class="news-text">
+                    <h3>Future of Indian esports</h3>
+                    <p>India's esports industry is expected to grow rapidly in the next five years, with some predicting a market value of $151 million by 2025.</p>
+                </div>
+            </article>
+        </div>
     </section>
 
     <footer class="site-footer">
-        <p>&copy; Gamerz blog All rights reserved.</p>
+        <p>&copy; Gamerz Blog All rights reserved.</p>
         <p>Mail to: 221fa04247@gmail.com</p>
     </footer>
+
     <script>
         document.getElementById('hamburger').addEventListener('click', function () {
-    document.querySelector('.navbar ul').classList.toggle('active');
-});
-
+            document.querySelector('.navbar ul').classList.toggle('active');
+        });
     </script>
 </body>
 </html>
