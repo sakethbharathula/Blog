@@ -40,7 +40,8 @@ body {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
-    font-size:20px;
+    font-size: 20px;
+    align-items: center;
 }
 
 .navbar a:hover {
@@ -59,16 +60,39 @@ body {
     padding: 60px 20px;
     background: linear-gradient(135deg, #1e1e1e, #333);
     margin-bottom: 0;
+    text-align: center; /* Center the text in the section */
 }
 
 .reviews-section h2, .news-section h2 {
     font-weight: 600;
     font-style: normal;
     font-size: 50px;
+    position: relative; /* Required for the underline effect */
+    overflow: hidden; /* Prevent underline from overflowing */
+    display: inline-block; /* Allows for inline padding */
+    margin: 0 auto; /* Center the h2 tags horizontally */
 }
 
 .reviews-section h2 span, .news-section h2 span {
     color: red;
+}
+
+.reviews-section h2::after, .news-section h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: red; /* Underline color */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.4s ease; /* Smooth animation */
+}
+
+.reviews-section h2:hover::after, .news-section h2:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .read-more {
@@ -88,7 +112,8 @@ body {
 h2 {
     font-size: 36px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
+    
 }
 
 .review-cards {
